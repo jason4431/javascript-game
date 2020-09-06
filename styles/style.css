@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+    background-color :rgb(17, 17, 17);
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+.gameboard {
+    margin-top: 70px;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 666px;
+	padding: 30px;
+	margin:  auto;
+	position: relative;
+	display: none;
+}
+
+.row {
+	height: 200px;
+	width: 100%;
+}
+
+.row-02 {
+	height: 206px;
+	border-top: 6px solid white;
+	border-bottom: 6px solid white;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	float: left;
+	line-height: 200px;
+	text-align: center;
+    font-size: 100px;
+    color: white;
+	font-weight: bold;
+}
+
+.square-01,
+.square-04,
+.square-07 {
+	width: 206px;
+	border-left: 6px solid white;
+	border-right: 6px solid white;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 1em;
+	margin-top: 100px;
+	margin-left: 225px;
+	background-color: transparent;
+	color: white;
+	border: solid 2px white;
+	cursor: pointer;
+}
+
+#startScreen {
+	margin: auto;
+	margin-top: 300px;
+	position: relative;
+	width: 400px;
+	height: 200px;
+	background-color: whitesmoke;
+	color: #333;
+	text-align: center;
+	border: 8px solid;
+	border-radius: 10px;
+	box-shadow: 0 1px 32px white;
+	transform: rotate(0) scale(0);
+	animation: boom 1s linear;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes boom {
+	100% {
+	  transform: rotate(1080deg) scale(1);
+	}
+  }
+  
+  #startScreen div {
+	height: 50%;
+  }
+  
+  #startScreen h1 {
+	position:absolute;
+	width: 100%;
+	color: #222;
+	font-size: 40px;
+	text-shadow: 0 1px 2px;
+	animation: pulse 6s linear infinite;
+  }
+  
+  @keyframes pulse {
+	50% {
+	  transform: scale(1.1);
+	}
+  }
+  
+  #startScreen p {
+	font-weight: bold;
+  }
+  
+  #startScreen span {
+	position: relative;
+	font-size: 18px;
+	animation: up 2s linear infinite;
+	animation-delay: 3s;
+  }
+  
+  @keyframes up {
+	25% {
+	  top: -4px;
+	}
+  }
+  
+  #gameOn {
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
+	animation: pulse 1.5s linear infinite;
+  }

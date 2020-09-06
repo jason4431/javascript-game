@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>        
+    <link rel="stylesheet" href="styles/style.css">          
+  </head>
+
+  <body>
+
+	<div id="startScreen">
+		<div>
+		<h1>Tic Tac Toe</h1>
+		</div>
+		<div>
+		<p>Press up arrow (<span>&uarr;</span>) to start</p>
+		</div>
+	</div>
+
+	<div class="wrapper" id="wrapper">
+	
+		<h1>Tic Tac Toe</h1>
+
+		<main class="gameboard">
+			
+			<div class="row row-01">
+				<div class="square square-00" data-index="0"></div>
+				<div class="square square-01" data-index="1"></div>
+				<div class="square square-02" data-index="2"></div>
+			</div><!-- end row-01 -->
+
+			<div class="row row-02">
+				<div class="square square-03" data-index="3"></div>
+				<div class="square square-04" data-index="4"></div>
+				<div class="square square-05" data-index="5"></div>
+			</div><!-- end row-02 -->
+
+			<div class="row row-03">
+				<div class="square square-06" data-index="6"></div>
+				<div class="square square-07" data-index="7"></div>
+				<div class="square square-08" data-index="8"></div>
+			</div><!-- end row-03 -->
+			
+		</main>
+
+		<button class="btn" id="btn">Go back to Start</button>
+
+	</div><!-- end wrapper -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="script/script.js"></script>    
+	</body>
+	</html>
